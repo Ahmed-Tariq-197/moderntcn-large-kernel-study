@@ -1,6 +1,4 @@
 
-![3D Work Division Diagram](work_division_3d.png)
-
 > **Status:** Work in Progress. Data audit and model architectures (`tcn.py`, `modern_tcn.py`) are implemented.
 
 <div align="center">
