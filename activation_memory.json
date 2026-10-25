@@ -1,0 +1,134 @@
+{
+  "batch": 512,
+  "note": "saved-for-backward bytes only (lower bound)",
+  "runs": {
+    "ETTh1_H96_modern_tcn_k3": {
+      "mib_per_sample": 2.869335174560547,
+      "gib_at_batch": 1.4346675872802734,
+      "gib_at_micro_batch": 1.4346675872802734,
+      "micro_batch": null,
+      "params": 586912,
+      "param_grad_adam_gib": 0.008745670318603516
+    },
+    "ETTh1_H96_modern_tcn_k83": {
+      "mib_per_sample": 2.904369354248047,
+      "gib_at_batch": 1.4521846771240234,
+      "gib_at_micro_batch": 1.4521846771240234,
+      "micro_batch": null,
+      "params": 623648,
+      "param_grad_adam_gib": 0.009293079376220703
+    },
+    "ETTh1_H96_tcn": {
+      "mib_per_sample": 4.432025909423828,
+      "gib_at_batch": 2.216012954711914,
+      "gib_at_micro_batch": 2.216012954711914,
+      "micro_batch": null,
+      "params": 207072,
+      "param_grad_adam_gib": 0.003085613250732422
+    },
+    "ETTh1_H96_dlinear": {
+      "mib_per_sample": 0.0205078125,
+      "gib_at_batch": 0.01025390625,
+      "gib_at_micro_batch": 0.01025390625,
+      "micro_batch": null,
+      "params": 64704,
+      "param_grad_adam_gib": 0.0009641647338867188
+    },
+    "ETTh1_H336_modern_tcn_k3": {
+      "mib_per_sample": 4.106212615966797,
+      "gib_at_batch": 2.0531063079833984,
+      "gib_at_micro_batch": 2.0531063079833984,
+      "micro_batch": null,
+      "params": 1877392,
+      "param_grad_adam_gib": 0.02797532081604004
+    },
+    "ETTh1_H336_modern_tcn_k83": {
+      "mib_per_sample": 4.141246795654297,
+      "gib_at_batch": 2.0706233978271484,
+      "gib_at_micro_batch": 2.0706233978271484,
+      "micro_batch": null,
+      "params": 1914128,
+      "param_grad_adam_gib": 0.028522729873657227
+    },
+    "ETTh1_H336_tcn": {
+      "mib_per_sample": 4.540973663330078,
+      "gib_at_batch": 2.270486831665039,
+      "gib_at_micro_batch": 2.270486831665039,
+      "micro_batch": null,
+      "params": 316272,
+      "param_grad_adam_gib": 0.004712820053100586
+    },
+    "ETTh1_H336_dlinear": {
+      "mib_per_sample": 0.02691650390625,
+      "gib_at_batch": 0.013458251953125,
+      "gib_at_micro_batch": 0.013458251953125,
+      "micro_batch": null,
+      "params": 226464,
+      "param_grad_adam_gib": 0.0033745765686035156
+    },
+    "ETTm1_H96_modern_tcn_k3": {
+      "mib_per_sample": 26.386425018310547,
+      "gib_at_batch": 13.193212509155273,
+      "gib_at_micro_batch": 3.2983031272888184,
+      "micro_batch": 128,
+      "params": 2081696,
+      "param_grad_adam_gib": 0.03101968765258789
+    },
+    "ETTm1_H96_modern_tcn_k83": {
+      "mib_per_sample": 26.491527557373047,
+      "gib_at_batch": 13.245763778686523,
+      "gib_at_micro_batch": 3.311440944671631,
+      "micro_batch": 128,
+      "params": 2191904,
+      "param_grad_adam_gib": 0.03266191482543945
+    },
+    "ETTm1_H96_tcn": {
+      "mib_per_sample": 4.432025909423828,
+      "gib_at_batch": 2.216012954711914,
+      "gib_at_micro_batch": 2.216012954711914,
+      "micro_batch": null,
+      "params": 207072,
+      "param_grad_adam_gib": 0.003085613250732422
+    },
+    "ETTm1_H96_dlinear": {
+      "mib_per_sample": 0.0205078125,
+      "gib_at_batch": 0.01025390625,
+      "gib_at_micro_batch": 0.01025390625,
+      "micro_batch": null,
+      "params": 64704,
+      "param_grad_adam_gib": 0.0009641647338867188
+    },
+    "ETTm1_H336_modern_tcn_k3": {
+      "mib_per_sample": 27.766857147216797,
+      "gib_at_batch": 13.883428573608398,
+      "gib_at_micro_batch": 3.4708571434020996,
+      "micro_batch": 128,
+      "params": 3372176,
+      "param_grad_adam_gib": 0.050249338150024414
+    },
+    "ETTm1_H336_modern_tcn_k83": {
+      "mib_per_sample": 27.871959686279297,
+      "gib_at_batch": 13.935979843139648,
+      "gib_at_micro_batch": 3.483994960784912,
+      "micro_batch": 128,
+      "params": 3482384,
+      "param_grad_adam_gib": 0.05189156532287598
+    },
+    "ETTm1_H336_tcn": {
+      "mib_per_sample": 4.540973663330078,
+      "gib_at_batch": 2.270486831665039,
+      "gib_at_micro_batch": 2.270486831665039,
+      "micro_batch": null,
+      "params": 316272,
+      "param_grad_adam_gib": 0.004712820053100586
+    },
+    "ETTm1_H336_dlinear": {
+      "mib_per_sample": 0.02691650390625,
+      "gib_at_batch": 0.013458251953125,
+      "gib_at_micro_batch": 0.013458251953125,
+      "micro_batch": null,
+      "params": 226464,
+      "param_grad_adam_gib": 0.0033745765686035156
+    }
+  }
+}

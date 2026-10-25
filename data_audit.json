@@ -1,0 +1,236 @@
+{
+  "ETTh1": {
+    "file": "ETTh1.csv",
+    "rows": 17420,
+    "columns": [
+      "date",
+      "HUFL",
+      "HULL",
+      "MUFL",
+      "MULL",
+      "LUFL",
+      "LULL",
+      "OT"
+    ],
+    "n_features": 7,
+    "nan_count": 0,
+    "first_ts": "2016-07-01 00:00:00",
+    "last_ts": "2018-06-26 19:00:00",
+    "monotonic_increasing": true,
+    "duplicate_ts": 0,
+    "sampling_intervals": {
+      "0 days 01:00:00": 17419
+    },
+    "border_rows": {
+      "train_end": 8640,
+      "val_end": 11520,
+      "test_end": 14400
+    },
+    "rows_used_by_benchmark": 14400,
+    "rows_unused_tail": 3020,
+    "frac_used": 0.8266,
+    "ts_at_borders": {
+      "train_start": "2016-07-01 00:00:00",
+      "train_last": "2017-06-25 23:00:00",
+      "val_first_target": "2017-06-26 00:00:00",
+      "val_last": "2017-10-23 23:00:00",
+      "test_first_target": "2017-10-24 00:00:00",
+      "test_last": "2018-02-20 23:00:00"
+    },
+    "windows": {
+      "96": {
+        "train": 8209,
+        "val": 2785,
+        "test": 2785,
+        "test_dropped_by_drop_last_bs512": 225,
+        "test_dropped_pct": 8.08
+      },
+      "336": {
+        "train": 7969,
+        "val": 2545,
+        "test": 2545,
+        "test_dropped_by_drop_last_bs512": 497,
+        "test_dropped_pct": 19.53
+      }
+    },
+    "train_mean": {
+      "HUFL": 7.9377,
+      "HULL": 2.021,
+      "MUFL": 5.0798,
+      "MULL": 0.7462,
+      "LUFL": 2.7818,
+      "LULL": 0.7885,
+      "OT": 17.1283
+    },
+    "train_std": {
+      "HUFL": 5.8127,
+      "HULL": 2.0901,
+      "MUFL": 5.5188,
+      "MULL": 1.9264,
+      "LUFL": 1.0235,
+      "LULL": 0.6302,
+      "OT": 9.1765
+    },
+    "shift_val_mean_in_train_std": {
+      "HUFL": -0.25,
+      "HULL": -0.237,
+      "MUFL": -0.298,
+      "MULL": -0.196,
+      "LUFL": 0.583,
+      "LULL": -0.187,
+      "OT": -0.169
+    },
+    "shift_test_mean_in_train_std": {
+      "HUFL": 0.032,
+      "HULL": 0.455,
+      "MUFL": -0.057,
+      "MULL": 0.369,
+      "LUFL": 0.495,
+      "LULL": 0.287,
+      "OT": -1.338
+    },
+    "val_std_ratio_to_train": {
+      "HUFL": 1.252,
+      "HULL": 1.064,
+      "MUFL": 1.311,
+      "MULL": 1.044,
+      "LUFL": 1.544,
+      "LULL": 1.244,
+      "OT": 0.542
+    },
+    "test_std_ratio_to_train": {
+      "HUFL": 1.317,
+      "HULL": 0.588,
+      "MUFL": 1.346,
+      "MULL": 0.526,
+      "LUFL": 0.892,
+      "LULL": 0.478,
+      "OT": 0.343
+    },
+    "mse_zero_forecast": {
+      "train": 1.0,
+      "val": 1.4830032122553716,
+      "test": 1.1108939017590442
+    }
+  },
+  "ETTm1": {
+    "file": "ETTm1.csv",
+    "rows": 69680,
+    "columns": [
+      "date",
+      "HUFL",
+      "HULL",
+      "MUFL",
+      "MULL",
+      "LUFL",
+      "LULL",
+      "OT"
+    ],
+    "n_features": 7,
+    "nan_count": 0,
+    "first_ts": "2016-07-01 00:00:00",
+    "last_ts": "2018-06-26 19:45:00",
+    "monotonic_increasing": true,
+    "duplicate_ts": 0,
+    "sampling_intervals": {
+      "0 days 00:15:00": 69679
+    },
+    "border_rows": {
+      "train_end": 34560,
+      "val_end": 46080,
+      "test_end": 57600
+    },
+    "rows_used_by_benchmark": 57600,
+    "rows_unused_tail": 12080,
+    "frac_used": 0.8266,
+    "ts_at_borders": {
+      "train_start": "2016-07-01 00:00:00",
+      "train_last": "2017-06-25 23:45:00",
+      "val_first_target": "2017-06-26 00:00:00",
+      "val_last": "2017-10-23 23:45:00",
+      "test_first_target": "2017-10-24 00:00:00",
+      "test_last": "2018-02-20 23:45:00"
+    },
+    "windows": {
+      "96": {
+        "train": 34129,
+        "val": 11425,
+        "test": 11425,
+        "test_dropped_by_drop_last_bs512": 161,
+        "test_dropped_pct": 1.41
+      },
+      "336": {
+        "train": 33889,
+        "val": 11185,
+        "test": 11185,
+        "test_dropped_by_drop_last_bs512": 433,
+        "test_dropped_pct": 3.87
+      }
+    },
+    "train_mean": {
+      "HUFL": 7.99,
+      "HULL": 2.0387,
+      "MUFL": 5.1099,
+      "MULL": 0.7562,
+      "LUFL": 2.8047,
+      "LULL": 0.7912,
+      "OT": 17.125
+    },
+    "train_std": {
+      "HUFL": 5.8331,
+      "HULL": 2.0896,
+      "MUFL": 5.519,
+      "MULL": 1.9242,
+      "LUFL": 1.0406,
+      "LULL": 0.6324,
+      "OT": 9.173
+    },
+    "shift_val_mean_in_train_std": {
+      "HUFL": -0.258,
+      "HULL": -0.236,
+      "MUFL": -0.304,
+      "MULL": -0.191,
+      "LUFL": 0.553,
+      "LULL": -0.194,
+      "OT": -0.169
+    },
+    "shift_test_mean_in_train_std": {
+      "HUFL": 0.024,
+      "HULL": 0.456,
+      "MUFL": -0.062,
+      "MULL": 0.373,
+      "LUFL": 0.473,
+      "LULL": 0.28,
+      "OT": -1.339
+    },
+    "val_std_ratio_to_train": {
+      "HUFL": 1.25,
+      "HULL": 1.067,
+      "MUFL": 1.312,
+      "MULL": 1.044,
+      "LUFL": 1.517,
+      "LULL": 1.24,
+      "OT": 0.542
+    },
+    "test_std_ratio_to_train": {
+      "HUFL": 1.316,
+      "HULL": 0.584,
+      "MUFL": 1.349,
+      "MULL": 0.524,
+      "LUFL": 0.887,
+      "LULL": 0.477,
+      "OT": 0.343
+    },
+    "mse_zero_forecast": {
+      "train": 1.0,
+      "val": 1.466800566197682,
+      "test": 1.1065154747429466
+    }
+  },
+  "h_vs_m": {
+    "ETTh1_rows": 17420,
+    "ETTm1_every4th_rows": 17420,
+    "timestamps_identical": true,
+    "max_abs_value_diff": 0.0
+  }
+}

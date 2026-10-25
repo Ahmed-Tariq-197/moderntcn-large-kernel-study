@@ -1,0 +1,87 @@
+{
+  "device": "cpu",
+  "torch": "2.14.1+cu130",
+  "gpu": null,
+  "runs": {
+    "ETTh1_H96_modern_tcn": {
+      "sec_per_epoch_est": 66.09553595383963,
+      "peak_mem_mb": null,
+      "n_train": 8209,
+      "batch": 8
+    },
+    "ETTh1_H96_tcn": {
+      "sec_per_epoch_est": 87.56977578997612,
+      "peak_mem_mb": null,
+      "n_train": 8209,
+      "batch": 8
+    },
+    "ETTh1_H96_dlinear": {
+      "sec_per_epoch_est": 1.4474147657553353,
+      "peak_mem_mb": null,
+      "n_train": 8209,
+      "batch": 8
+    },
+    "ETTh1_H336_modern_tcn": {
+      "sec_per_epoch_est": 84.81553477048874,
+      "peak_mem_mb": null,
+      "n_train": 7969,
+      "batch": 8
+    },
+    "ETTh1_H336_tcn": {
+      "sec_per_epoch_est": 78.88584608832994,
+      "peak_mem_mb": null,
+      "n_train": 7969,
+      "batch": 8
+    },
+    "ETTh1_H336_dlinear": {
+      "sec_per_epoch_est": 2.0736454526583357,
+      "peak_mem_mb": null,
+      "n_train": 7969,
+      "batch": 8
+    },
+    "ETTm1_H96_modern_tcn": {
+      "sec_per_epoch_est": 2199.7854599853354,
+      "peak_mem_mb": null,
+      "n_train": 34129,
+      "batch": 8
+    },
+    "ETTm1_H96_tcn": {
+      "sec_per_epoch_est": 300.98310601711273,
+      "peak_mem_mb": null,
+      "n_train": 34129,
+      "batch": 8
+    },
+    "ETTm1_H96_dlinear": {
+      "sec_per_epoch_est": 6.018658558527628,
+      "peak_mem_mb": null,
+      "n_train": 34129,
+      "batch": 8
+    },
+    "ETTm1_H336_modern_tcn": {
+      "sec_per_epoch_est": 2097.286725203196,
+      "peak_mem_mb": null,
+      "n_train": 33889,
+      "batch": 8
+    },
+    "ETTm1_H336_tcn": {
+      "sec_per_epoch_est": 299.1049029827118,
+      "peak_mem_mb": null,
+      "n_train": 33889,
+      "batch": 8
+    },
+    "ETTm1_H336_dlinear": {
+      "sec_per_epoch_est": 8.971908191839855,
+      "peak_mem_mb": null,
+      "n_train": 33889,
+      "batch": 8
+    }
+  },
+  "estimate_hours": {
+    "assumed_epochs_per_run": 40,
+    "P1": 215.13381710383626,
+    "P3": 174.43461712532573,
+    "P4_ETTh1": 20.121476096577116,
+    "P4_ETTm1_full": 572.9429580251376,
+    "P4_ETTm1_minimal": 146.65236399902236
+  }
+}

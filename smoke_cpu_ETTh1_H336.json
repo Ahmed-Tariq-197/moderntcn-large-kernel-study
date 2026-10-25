@@ -1,0 +1,35 @@
+{
+  "device": "cpu",
+  "dataset": "ETTh1",
+  "H": 336,
+  "models": {
+    "modern_tcn": {
+      "params": 1899792,
+      "train_mse_first": 0.7548671662807465,
+      "train_mse_last": 0.4081439226865768,
+      "val_mse_best": 0.9285321850155343,
+      "sec_per_epoch": 6.751483917236328,
+      "loss_decreased": true,
+      "finite": true
+    },
+    "tcn": {
+      "params": 316272,
+      "train_mse_first": 0.8562060669064522,
+      "train_mse_last": 0.4789318330585956,
+      "val_mse_best": 1.1254378426248064,
+      "sec_per_epoch": 6.934163888295491,
+      "loss_decreased": true,
+      "finite": true
+    },
+    "dlinear": {
+      "params": 226464,
+      "train_mse_first": 1.3946727067232132,
+      "train_mse_last": 0.581305243074894,
+      "val_mse_best": 0.82209187025561,
+      "sec_per_epoch": 0.15518399079640707,
+      "loss_decreased": true,
+      "finite": true
+    }
+  },
+  "passed": true
+}

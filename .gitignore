@@ -1,29 +1,33 @@
-﻿# Data (never commit raw ETT CSVs)
+# Data (never commit raw ETT CSVs)
 data/
 *.csv
 *.parquet
+!results/runs.csv
 
-# Model checkpoints
+# Model checkpoints and heavy run artifacts
 *.pt
 *.pth
 *.ckpt
 checkpoints/
+results/runs/*/last.pt
+results/runs/*/best.pt
+
+# Delivery archives (rebuilt on demand)
+deliverables/*.zip
 
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-.Python
-build/
-dist/
-*.egg-info/
 .venv/
 venv/
 env/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
 
 # Jupyter
 .ipynb_checkpoints/
-*.ipynb_checkpoints
 
 # OS / IDE
 .DS_Store
@@ -32,7 +36,7 @@ Thumbs.db
 .idea/
 *.swp
 
-# Logs (keep JSON audit, ignore runtime logs)
+# Runtime logs (JSON audit/count files in logs/ ARE tracked)
 logs/*.log
 logs/tensorboard/
 

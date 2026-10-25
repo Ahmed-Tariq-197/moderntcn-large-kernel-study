@@ -1,0 +1,188 @@
+{
+  "assumptions": {
+    "M": 7,
+    "L": 336,
+    "P": 8,
+    "S": 4,
+    "N": 84,
+    "D": 64,
+    "small_kernel_rule": "min(5, k)",
+    "revin_params": 0
+  },
+  "ablation": {
+    "ETTh1_H96": {
+      "K": 1,
+      "r": 1,
+      "totals": {
+        "3": 586912,
+        "13": 592288,
+        "31": 600352,
+        "51": 609312,
+        "83": 623648
+      },
+      "max_over_min_minus_1": 0.0626,
+      "within_10pct": true,
+      "macs_per_sample_k51": 11364864,
+      "train_windows": 8209,
+      "train_gflop_per_epoch_k51": 559.8,
+      "detail_k51": {
+        "total": 609312,
+        "stem": 704,
+        "per_block": 92416,
+        "dw_large": 23744,
+        "dw_small": 3136,
+        "ffn1": 58240,
+        "ffn2": 7168,
+        "head": 516192,
+        "macs_per_sample": 11364864
+      }
+    },
+    "ETTh1_H336": {
+      "K": 1,
+      "r": 1,
+      "totals": {
+        "3": 1877392,
+        "13": 1882768,
+        "31": 1890832,
+        "51": 1899792,
+        "83": 1914128
+      },
+      "max_over_min_minus_1": 0.0196,
+      "within_10pct": true,
+      "macs_per_sample_k51": 20396544,
+      "train_windows": 7969,
+      "train_gflop_per_epoch_k51": 975.2,
+      "detail_k51": {
+        "total": 1899792,
+        "stem": 704,
+        "per_block": 92416,
+        "dw_large": 23744,
+        "dw_small": 3136,
+        "ffn1": 58240,
+        "ffn2": 7168,
+        "head": 1806672,
+        "macs_per_sample": 20396544
+      }
+    },
+    "ETTm1_H96": {
+      "K": 3,
+      "r": 8,
+      "totals": {
+        "3": 2081696,
+        "13": 2097824,
+        "31": 2122016,
+        "51": 2148896,
+        "83": 2191904
+      },
+      "max_over_min_minus_1": 0.0529,
+      "within_10pct": true,
+      "macs_per_sample_k51": 138485760,
+      "train_windows": 34129,
+      "train_gflop_per_epoch_k51": 28358.3,
+      "detail_k51": {
+        "total": 2148896,
+        "stem": 704,
+        "per_block": 544000,
+        "dw_large": 23744,
+        "dw_small": 3136,
+        "ffn1": 462784,
+        "ffn2": 54208,
+        "head": 516192,
+        "macs_per_sample": 138485760
+      }
+    },
+    "ETTm1_H336": {
+      "K": 3,
+      "r": 8,
+      "totals": {
+        "3": 3372176,
+        "13": 3388304,
+        "31": 3412496,
+        "51": 3439376,
+        "83": 3482384
+      },
+      "max_over_min_minus_1": 0.0327,
+      "within_10pct": true,
+      "macs_per_sample_k51": 147517440,
+      "train_windows": 33889,
+      "train_gflop_per_epoch_k51": 29995.3,
+      "detail_k51": {
+        "total": 3439376,
+        "stem": 704,
+        "per_block": 544000,
+        "dw_large": 23744,
+        "dw_small": 3136,
+        "ffn1": 462784,
+        "ffn2": 54208,
+        "head": 1806672,
+        "macs_per_sample": 147517440
+      }
+    }
+  },
+  "baselines": {
+    "ETTh1_H96": {
+      "TCN": {
+        "total": 207072,
+        "head": 43680,
+        "receptive_field_steps": 509,
+        "macs_per_sample": 54319104
+      },
+      "DLinear": {
+        "total": 64704,
+        "macs_per_sample": 451584
+      },
+      "tcn_train_gflop_per_epoch": 2675.4,
+      "dlinear_train_gflop_per_epoch": 22.2
+    },
+    "ETTh1_H336": {
+      "TCN": {
+        "total": 316272,
+        "head": 152880,
+        "receptive_field_steps": 509,
+        "macs_per_sample": 54426624
+      },
+      "DLinear": {
+        "total": 226464,
+        "macs_per_sample": 1580544
+      },
+      "tcn_train_gflop_per_epoch": 2602.4,
+      "dlinear_train_gflop_per_epoch": 75.6
+    },
+    "ETTm1_H96": {
+      "TCN": {
+        "total": 207072,
+        "head": 43680,
+        "receptive_field_steps": 509,
+        "macs_per_sample": 54319104
+      },
+      "DLinear": {
+        "total": 64704,
+        "macs_per_sample": 451584
+      },
+      "tcn_train_gflop_per_epoch": 11123.1,
+      "dlinear_train_gflop_per_epoch": 92.5
+    },
+    "ETTm1_H336": {
+      "TCN": {
+        "total": 316272,
+        "head": 152880,
+        "receptive_field_steps": 509,
+        "macs_per_sample": 54426624
+      },
+      "DLinear": {
+        "total": 226464,
+        "macs_per_sample": 1580544
+      },
+      "tcn_train_gflop_per_epoch": 11066.8,
+      "dlinear_train_gflop_per_epoch": 321.4
+    }
+  },
+  "kernel_reach_raw_steps_single_block": {
+    "3": 16,
+    "13": 56,
+    "31": 128,
+    "51": 208,
+    "83": 336
+  },
+  "note": "train_gflop_per_epoch = 3 (fwd+bwd) * 2 FLOP/MAC * MACs * #train windows; it is an arithmetic count, NOT a measured runtime."
+}

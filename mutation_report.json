@@ -1,0 +1,142 @@
+[
+  {
+    "mutant": "ffn2 grouped by variable instead of feature",
+    "file": "src/models/modern_tcn.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_models.py::test_modern_tcn_param_counts_equal_analytic_and_spread_within_10pct[ETTh1-96-1-1]",
+    "sec": 2.2
+  },
+  {
+    "mutant": "missing permutation before ConvFFN2",
+    "file": "src/models/modern_tcn.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_models.py::test_block_permutations_connect_the_two_ffns_correctly",
+    "sec": 3.5
+  },
+  {
+    "mutant": "depthwise conv not depthwise",
+    "file": "src/models/modern_tcn.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_models.py::test_modern_tcn_param_counts_equal_analytic_and_spread_within_10pct[ETTh1-96-1-1]",
+    "sec": 2.1
+  },
+  {
+    "mutant": "zero padding instead of last-value padding",
+    "file": "src/models/modern_tcn.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_models.py::test_patch_arithmetic_and_last_value_padding - a...",
+    "sec": 3.2
+  },
+  {
+    "mutant": "TCN not causal",
+    "file": "src/models/tcn.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_models.py::test_tcn_is_causal_and_has_the_documented_receptive_field",
+    "sec": 3.6
+  },
+  {
+    "mutant": "RevIN statistics not detached",
+    "file": "src/models/revin.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_models.py::test_revin_roundtrip_and_stats - assert (True is...",
+    "sec": 3.6
+  },
+  {
+    "mutant": "scaler fitted on train+val rows",
+    "file": "src/data.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_data.py::test_scaler_fit_on_train_rows_only - AssertionError: ",
+    "sec": 3.1
+  },
+  {
+    "mutant": "validation windows without context rows",
+    "file": "src/data.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_data.py::test_real_data_counts_and_columns[96-ETTh1] - asse...",
+    "sec": 2.4
+  },
+  {
+    "mutant": "evaluation drops the last partial batch",
+    "file": "src/evaluate.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_data.py::test_metrics_match_numpy_and_are_batch_invariant",
+    "sec": 3.3
+  },
+  {
+    "mutant": "ERF lag axis not flipped",
+    "file": "src/receptive_field.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_erf.py::test_lag_orientation_lag_zero_is_the_newest_step - ...",
+    "sec": 6.2
+  },
+  {
+    "mutant": "ERF probe estimate without sqrt",
+    "file": "src/receptive_field.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_erf.py::test_probe_estimator_matches_exact_jacobian_dlinear",
+    "sec": 2.8
+  },
+  {
+    "mutant": "ERF gradient not ReLU-ed (Target A)",
+    "file": "src/receptive_field.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_erf.py::test_target_a_is_zero_outside_the_architectural_support_modern_tcn",
+    "sec": 6.7
+  },
+  {
+    "mutant": "test guard removed",
+    "file": "src/train.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_train.py::test_test_evaluation_is_guarded_one_shot_and_uses_the_best_checkpoint",
+    "sec": 9.1
+  },
+  {
+    "mutant": "test overwrite allowed",
+    "file": "src/train.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_train.py::test_test_evaluation_is_guarded_one_shot_and_uses_the_best_checkpoint",
+    "sec": 9.6
+  },
+  {
+    "mutant": "RNG state not restored on resume",
+    "file": "src/train.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_train.py::test_resume_after_interruption_reproduces_the_uninterrupted_run",
+    "sec": 7.0
+  },
+  {
+    "mutant": "early stopping on non-strict improvement",
+    "file": "src/train.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_train.py::test_early_stopping_uses_strict_improvement_and_patience",
+    "sec": 7.7
+  },
+  {
+    "mutant": "sd with ddof=0",
+    "file": "scripts/aggregate.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_scripts.py::test_summarize_mean_and_sample_sd_over_seeds - ...",
+    "sec": 2.7
+  },
+  {
+    "mutant": "ablation grid includes k=51 twice",
+    "file": "src/grid.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_scripts.py::test_grid_sizes_match_the_experiment_matrix - A...",
+    "sec": 2.7
+  },
+  {
+    "mutant": "lr schedule type3 off by one",
+    "file": "src/train.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_train.py::test_lr_schedules_follow_the_reference_recipes - ...",
+    "sec": 2.3
+  },
+  {
+    "mutant": "micro-batch loss not rescaled",
+    "file": "src/train.py",
+    "status": "KILLED",
+    "first_failure": "FAILED tests/test_train.py::test_micro_batch_accumulation_equals_full_batch_for_models_without_batch_statistics[dlinear]",
+    "sec": 8.5
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "device": "cpu",
+  "dataset": "ETTm1",
+  "H": 336,
+  "models": {
+    "modern_tcn": {
+      "params": 3439376,
+      "train_mse_first": 0.25647784024477,
+      "train_mse_last": 0.1120454967021942,
+      "val_mse_best": 0.4701007267316761,
+      "sec_per_epoch": 16.76481020450592,
+      "loss_decreased": true,
+      "finite": true
+    },
+    "tcn": {
+      "params": 316272,
+      "train_mse_first": 0.2299444675445556,
+      "train_mse_last": 0.1880670934915542,
+      "val_mse_best": 0.6066125877877738,
+      "sec_per_epoch": 1.6204328536987305,
+      "loss_decreased": true,
+      "finite": true
+    },
+    "dlinear": {
+      "params": 226464,
+      "train_mse_first": 1.151946842670441,
+      "train_mse_last": 0.3832258880138397,
+      "val_mse_best": 0.8258408661466845,
+      "sec_per_epoch": 0.04004776477813721,
+      "loss_decreased": true,
+      "finite": true
+    }
+  },
+  "passed": true
+}
